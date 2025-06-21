@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Word • Sentence • Paragraph Generator</title>
+  <link rel="stylesheet" href="WG.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Text Generator</h1>
+    <div class="controls">
+      <div>
+        <label class="btn">
+          <input type="radio" name="mode" value="word" checked> Word
+        </label>
+        <label class="btn">
+          <input type="radio" name="mode" value="sentence"> Sentence
+        </label>
+        <label class="btn">
+          <input type="radio" name="mode" value="paragraph"> Paragraph
+        </label>
+      </div>
+      <button id="generate-btn">Generate</button>
+    </div>
+    <div id="output" class="output"></div>
+  </div>
+  <script src="WG.js"></script>
+</body>
+</html>
