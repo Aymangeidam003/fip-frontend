@@ -2,28 +2,32 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Word • Sentence • Paragraph Generator</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Word Sentence Paragraph Generator</title>
   <link rel="stylesheet" href="WG.css">
 </head>
 <body>
-  <div class="container">
-    <h1>Text Generator</h1>
-    <div class="controls">
-      <div>
-        <label class="btn">
-          <input type="radio" name="mode" value="word" checked> Word
-        </label>
-        <label class="btn">
-          <input type="radio" name="mode" value="sentence"> Sentence
-        </label>
-        <label class="btn">
-          <input type="radio" name="mode" value="paragraph"> Paragraph
-        </label>
-      </div>
-      <button id="generate-btn">Generate</button>
+  <div class="wrapper">
+    <div class="top">
+      <h1>Loren Ipsum Generator</h1>
+      <form class="collect-vars" onsubmit="return false;">
+        <p>I need</p>
+        <input id="num" type="number" value="1" min="1" max="999" name="num">
+        <p>of your</p>
+        <select id="typ" name="typ">
+          <option value="w">words</option>
+          <option value="s">sentences</option>
+          <option value="p">paragraphs</option>
+        </select>
+        <p>content.</p>
+        <div id="generate">Generate</div>
+      </form>
     </div>
-    <div id="output" class="output"></div>
+    <div class="bottom">
+      <div id="display" class="display"></div>
+    </div>
   </div>
+
   <script src="WG.js"></script>
 </body>
 </html>
