@@ -1,6 +1,4 @@
-/* ============================
-   Reset and Base Styles
-============================ */
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -11,43 +9,37 @@ html, body {
   height: 100%;
   width: 100%;
   font-family: serif;
-  background: #8ECAE6; /* Light Blue from Palette 1 */
-  color: #023047; /* Dark Blue from Palette 1 */
+  background: #8ECAE6; 
+  color: #023047; 
 }
 
-/* ============================
-   Wrapper Layout
-============================ */
+
 .wrapper {
   height: 100vh;
   overflow: auto;
 }
 
-/* ============================
-   Top Section (Header and Form)
-============================ */
+
 .top {
   padding: 0 40px;
   height: 200px;
   user-select: none;
-  background: #F7AEF8; /* Soft Purple from Palette 2 */
+  background: #F7AEF8; 
 }
 
 .wrapper h1 {
   padding: 15px 0;
   font-size: 26px;
-  color: #FB8500; /* Orange from Palette 1 */
+  color: #FB8500; 
   text-align: center;
 }
 
-/* ============================
-   Form Styles
-============================ */
+
 form {
   width: 100%;
   padding: 20px;
   margin-bottom: 15px;
-  background: #FDC5F5; /* Light Pink from Palette 2 */
+  background: #FDC5F5; 
   border-radius: 8px;
 }
 
@@ -55,7 +47,7 @@ form p {
   display: inline-block;
   line-height: 30px;
   margin: 5px;
-  color: #023047; /* Dark Blue for contrast */
+  color: #023047; 
 }
 
 form input,
@@ -66,23 +58,20 @@ form select {
   margin: 0 5px;
   background: #fff;
   border: none;
-  border-bottom: 2px solid #B388EB; /* Violet from Palette 2 */
+  border-bottom: 2px solid #B388EB; 
   font-size: 1rem;
   text-align: center;
   border-radius: 4px;
 }
 
-/* ============================
-   Generate Button
-============================ */
 #generate {
   display: block;
   width: 100px;
   height: 40px;
   line-height: 40px;
   margin-top: 15px;
-  background: #FFB703; /* Gold from Palette 1 */
-  color: #023047; /* Dark Blue text */
+  background: #FFB703; 
+  color: #023047; 
   text-align: center;
   border-radius: 5px;
   cursor: pointer;
@@ -90,20 +79,18 @@ form select {
 }
 
 #generate:hover {
-  background: #72DDF7; /* Aqua from Palette 2 */
-  color: #fff;
+  background: #72DDF7; /
+  color: #ffff;
 }
 
-/* ============================
-   Bottom Section (Output Area)
-============================ */
+
 .bottom {
   height: calc(100vh - 200px);
   position: relative;
 }
 
 .display {
-  background: #fff; /* White output background */
+  background: #fff; 
   padding: 20px;
   position: absolute;
   top: 20px;
@@ -111,29 +98,13 @@ form select {
   left: 40px;
   right: 40px;
   overflow: auto;
-  border: 2px solid #8093F1; /* Blue-purple from Palette 2 */
+  border: 2px solid #8093F1; 
   border-radius: 8px;
 }
 
 .display p {
   margin-bottom: 25px;
   line-height: 1.6;
-  color: #023047; /* Dark Blue text for readability */
+  color: #023047; 
 }
 
-/* ============================
-   Responsive Design
-============================ */
-@media screen and (max-width: 516px) {
-  .top {
-    height: 200px;
-  }
-
-  .bottom {
-    height: calc(100vh - 200px);
-  }
-
-  .display {
-    top: 60px;
-  }
-}
