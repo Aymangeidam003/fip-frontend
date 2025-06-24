@@ -1,8 +1,8 @@
 /* Palette 1: #219EBC (blue), #FFB703 (gold) */
 body {
     font-family: Arial, sans-serif;
-    background: #f0f0f5;
-    color: #023047;
+    background: #023047;
+    color: #B388EB;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -11,17 +11,17 @@ body {
   }
   
   .container {
-    background: white;
+    background: #72DDF7;
     padding: 2rem;
     border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    box-shadow: 0 0 10px #F7AEF8;
     max-width: 500px;
     width: 90%;
   }
   
   h1 {
     margin-top: 0;
-    color: #219EBC;
+    color: white;
   }
   
   .controls {
@@ -43,7 +43,7 @@ body {
   #generate-btn {
     background: #FFB703;
     border: none;
-    color: white;
+    color:#023047 ;
     padding: 0.6rem 1.2rem;
     font-size: 1rem;
     border-radius: 4px;
@@ -61,8 +61,8 @@ body {
     line-height: 1.5;
     min-height: 4rem;
     padding: 1rem;
-    border: 2px dashed #219EBC;
+    border: 2px dashed #B388EB;
     border-radius: 4px;
-    background: #eaf6f9;
+    background: #ffffff;
   }
   

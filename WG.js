@@ -1,4 +1,4 @@
-const wordList = ["apple","ocean","sky","planet","dream","light","river","mountain","forest","idea"];
+const wordList = ["Apple","Ocean","Sky","Planet","Dream","Light","River","Mountain","Forest","Idea"];
 const sentenceList = [
   "The sun dipped below the horizon.",
   "She whispered secrets to the night.",
